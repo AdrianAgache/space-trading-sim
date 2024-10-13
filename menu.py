@@ -1,16 +1,16 @@
 from time import sleep
-from os import *
+import os
 ans = True
 while ans == True:
     print("<SHIP LOADING>")
     sleep(0.5)
     for i in range(0, 101):
-      system("clear")
+      os.system("clear")
       print("<SHIP LOADING: ", i, "%>")
       sleep(0.08 / ((i+1*360)/100))
     j = open("save.txt", "r")
-    capnam = j.readline()
-    print("<Welcome "+ capnam + ">")
+    capnam = str(j.readline())
+    print("<Welcome " + capnam + ">")
     ans=input("What would you like to do?\n")
     if ans=="1": 
       print("") 
