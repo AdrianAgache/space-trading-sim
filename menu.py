@@ -8,7 +8,9 @@ while ans == True:
       system("clear")
       print("<SHIP LOADING: ", i, "%>")
       sleep(0.08 / ((i+1*360)/100))
-    print("<Welcome Captain>")
+    j = open("save.txt", "r")
+    capnam = j.readline()
+    print("<Welcome "+ capnam + ">")
     ans=input("What would you like to do?\n")
     if ans=="1": 
       print("") 
