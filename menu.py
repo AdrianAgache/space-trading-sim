@@ -11,7 +11,9 @@ while ans == True:
     j = open("save.txt", "r")
     capnam = str(j.readline())
     print("<Welcome " + capnam + ">")
-    ans=input("What would you like to do?\n")
+    ans=input("<What would you like to do?>\n"
+             "<1: Plan the next journey>\n"
+             "<2: Look at the defence systems>\n")
     if ans=="1": 
       print("") 
     elif ans=="2":
